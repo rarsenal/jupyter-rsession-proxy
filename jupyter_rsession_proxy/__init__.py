@@ -17,6 +17,7 @@ def setup_shiny():
                 location / {{
                     site_dir {site_dir};
                     log_dir {site_dir}/logs;
+                    sanitize_errors false;
                     directory_index on;
                 }}
             }}
